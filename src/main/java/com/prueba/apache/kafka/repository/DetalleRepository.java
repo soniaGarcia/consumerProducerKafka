@@ -12,7 +12,7 @@ import org.springframework.data.repository.CrudRepository;
  * @author sonia.cabrera
  */
 public interface DetalleRepository 
-        extends CrudRepository<Detalle, String>,QuerydslPredicateExecutor<Detalle>, , QuerydslBinderCustomizer<QDetalle>{
+        extends CrudRepository<Detalle, String>,QuerydslPredicateExecutor<Detalle>, QuerydslBinderCustomizer<QDetalle>{
     
     @Override
 	default public void customize(QuerydslBindings bindings, QDetalle root) {
