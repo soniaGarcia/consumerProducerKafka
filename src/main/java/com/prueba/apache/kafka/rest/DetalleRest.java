@@ -14,14 +14,14 @@ import com.prueba.apache.kafka.repository.DetalleRepository;
  * @author Sonia
  */
 @RestController
-@RequestMapping(value = "/detalles")
+@RequestMapping(value = "/detalle")
 public class DetalleRest {
 
     @Autowired
     DetalleRepository detalleRepository;
     
     @RequestMapping(method = RequestMethod.GET)
-    public List<Detalle> getDetalles() {
+    public List<Detalle> getDetalle() {
         Iterable<Detalle> iterator = detalleRepository.findAll();
         List<Detalle> result = new ArrayList<>();
         iterator.forEach(result::add);

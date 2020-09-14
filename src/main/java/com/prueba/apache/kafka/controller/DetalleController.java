@@ -13,7 +13,7 @@ public class DetalleController {
 
         @RequestMapping("/consultaDetalle")
 	public ModelAndView helloworld() {
-		return new ModelAndView("detalle");
+		return new ModelAndView("detalles");
 	}
 
 }

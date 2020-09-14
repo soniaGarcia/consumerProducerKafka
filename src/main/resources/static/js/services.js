@@ -1,11 +1,11 @@
-var app = angular.module('detalle', ["ngResource"]);
+var app = angular.module('detalles', ["ngResource"]);
 
 app.controller('DetalleController', ['$scope', '$http',
 
     function ($scope, $http) {
-        $scope.getVehiculos = function () {
-            $http.get('/detalles').success(function (data) {
-                $scope.detalle = data;
+        $scope.getDetalle = function () {
+            $http.get('/detalle').success(function (data) {
+                $scope.detalles = data;
             });
         }
  
