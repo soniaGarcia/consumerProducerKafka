@@ -18,7 +18,7 @@ public class ConsumidorKafka {
     @Autowired
     private ProductorKafka productorKafka;
 
-//    @KafkaListener(topics = "detalle", groupId = "foo", containerFactory = "vehiculoKafkaListenerContainerFactory")
+    @KafkaListener(topics = "detalle", groupId = "foo", containerFactory = "vehiculoKafkaListenerContainerFactory")
     public void listenTest(VehiculoMsj message) {
         String pattern = "yyyy-MM-dd";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
